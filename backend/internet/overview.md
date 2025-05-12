@@ -23,7 +23,8 @@ A Comunicação na internet acontece por meio de protocolos, como:
 ## 🔄 Resumo
 
 Esse processo de envio e recebimento de dados acontece constantemente, permitindo que você acesse:
--Páginas da web
--E-mails
--Arquivos
--Serviços online em geral
+
+- Páginas da web
+- E-mails
+- Arquivos
+- Serviços online em geral

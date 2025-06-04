@@ -136,3 +136,60 @@ O TCP é um protcolo de tranportes confiável e orientado a conexão. Suas princ
 ---
 
 ## ✅Funções do IP (Internet Protocol)
+
+O ip é um protocolo da cama de rede, responsável por endereçar e encaminhar pacotes na internet.
+
+1. Endereçamento
+
+- Usa endereços IP (ipv4 ou ipv6) para identificar dispositivos na rede.
+- Exemplo: `192.168.1.1`.
+
+---
+
+2. Encapsulamento de Dados
+
+- Envolve os dados com um cabeçalho IP que contém informações como:
+  - IP de origem e destino
+  - Tempo de vida (TTL)
+  - Protocolo de transporte (TCP, UDP)
+
+---
+
+3. Roteamento
+
+- Decide o melhor caminho que os pacotes devem seguir para chegar ao destino;
+- Usa tabelas de rotemamento nos roteadores.
+
+4. Fragmentação e Reassemblagem
+
+- Se um pacote for maior que o tamanho máximo pemitido pela rede, ele é dividido em fragmentos;
+- No destino, os fragmentos são remontados.
+
+---
+
+5. Entrega Não Confiável
+
+- O IP não garante que o pacote chegará ou que chegará na ordem correta;
+- Ele é um protocolo "best effort" (melhor esforço).
+
+---
+
+6. Identificação e Controle de Tráfego
+
+- Campos no cabeçalho, como:
+  - Tipo de Serviço(Tos) ou DSCP, para priorização de tráfego;
+  - Identificação, para remontagem de fragmentos.
+
+---
+
+7. Resumo da Diferença
+
+| Função           | TCP (Transporte)              | IP (Rede)               |
+| ---------------- | ----------------------------- | ----------------------- |
+| Confiabilidade   | Sim                           | Não                     |
+| Ordem            | Garante                       | Não garante             |
+| Controle de erro | Sim (ACK, retransmissão)      | Não                     |
+| Roteamento       | Não (usa endereços)           | Sim                     |
+| Fragmentação     | Não diretamente               | Sim                     |
+| Portas           | Sim (porta de origem/destino) | Não                     |
+| Conexão          | Orientado à conexão           | Não orientado à conexão |
